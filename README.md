@@ -5,8 +5,11 @@
 This study focuses on Arabidopsis thaliana, a model plant organism in genomics, using three accessions from different regions: Abd-0 (UK), Qar-8a (Lebanon), and Ishikawa (Japan). The goal was to perform de novo genome assembly and annotation using three assemblers: Flye, Hifiasm, and LJA.
 
 The assemblies were evaluated using BUSCO, QUAST, and Merqury. The results showed that:
-- Flye provided the best contiguity,
-- Hifiasm demonstrated the highest completeness.
+- Flye produced fewer misassemblies and lower duplication ratios across all accessions, despite generating shorter contigs compared to Hifiasm.
+- Hifiasm yielded the longest contigs and the highest NG50 values but introduced more misassemblies and higher duplication rates, which could impact assembly accuracy.
+- LJA provided a middle ground, with fewer errors than Hifiasm but still had notable misassemblies.
+
+Flye was ultimately selected for the subsequent annotation step due to its more balanced and accurate assembly, offering fewer errors and ensuring greater structural reliability for downstream analyses.
 
 Structural variations were observed, particularly in the nucleolus organizer regions of chromosomes 2 and 4, which aligned with known biological variability. Transposable element (TE) annotation identified abundant LTR Gypsy, Copia, and Helitron elements, though predictions for Helitron were cautioned due to potential false positives.
 
@@ -30,4 +33,5 @@ These datasets are part of a larger collection from the study by Lian et al. (20
 
 ## To run this project
 All scripts were executed on the IBU cluster. For R scripts, corresponding .sh scripts are provided to run them via SLURM.
+
 Note: Assembly must be performed before starting the annotation process.

@@ -14,7 +14,7 @@
 #   4. Outputs two separate GFF files for visualization and comparison of gene models.
 #
 # USAGE:
-#   sbatch refine_gene_annotation.sh
+#   sbatch 21_refine_gene_annotation.sh
 #
 #   IMPORTANT!
 #   Ensure you submit this script while in the OMArk conda environment that you created to run OMArk.
